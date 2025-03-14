@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airbnb CDMX</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Renta en la CDMX</h1>
+    <div id="map"></div>
+    <div class="content">
+      <h2 id="alcaldia-name"></h2>
+      <div class="lists">
+        <div class="list">
+          <h3>Lugares para reservar</h3>
+          <ul id="lugares-list"></ul>
+        </div>
+        <div class="list">
+          <h3>Zonas turísticas</h3>
+          <ul id="zonas-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

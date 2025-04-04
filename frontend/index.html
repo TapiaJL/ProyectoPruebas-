@@ -3,18 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Airbnb CDMX - Alojamientos y Zonas Turísticas</title>
+  <title>CDMX - Alojamientos y Zonas Turísticas</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos adicionales para manejo de errores */
+    .error-message {
+      color: #d9534f;
+      padding: 10px;
+      background-color: #f8d7da;
+      border-radius: 4px;
+      margin: 10px 0;
+    }
+    
+    .loading {
+      color: #5bc0de;
+      font-style: italic;
+    }
+    
+    #zonas-list.empty {
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
   <header class="main-header">
     <div class="container">
-      <h1><i class="fas fa-airbnb"></i> Airbnb CDMX</h1>
+      <h1><i class="fas fa-city"></i> Alojamiento CDMX</h1>
       <p class="subtitle">Encuentra tu alojamiento perfecto en la Ciudad de México</p>
     </div>
   </header>
@@ -23,31 +45,39 @@
     <section class="map-section">
       <div id="map"></div>
       <div class="map-controls">
-        <button id="locate-me" class="btn btn-primary">
-          <i class="fas fa-location-arrow"></i> Mi ubicación
+        <button id="reset-map" class="btn btn-secondary">
+          <i class="fas fa-sync-alt"></i> Reiniciar vista
         </button>
       </div>
     </section>
 
     <section class="content-section">
-      <h2 id="alcaldia-name" class="section-title"></h2>
+      <h2 id="alcaldia-name" class="section-title">Selecciona una alcaldía en el mapa</h2>
       
       <div class="dashboard">
         <div class="card">
           <div class="card-header">
-            <h3><i class="fas fa-bed"></i> Lugares para reservar</h3>
+            <h3><i class="fas fa-bed"></i> Plataformas de reservación</h3>
           </div>
           <div class="card-body">
-            <ul id="lugares-list" class="styled-list"></ul>
+            <div id="lugares-container">
+              <ul id="lugares-list" class="styled-list">
+                <li class="empty-state">Selecciona una alcaldía para ver opciones</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="card">
           <div class="card-header">
-            <h3><i class="fas fa-map-marked-alt"></i> Zonas turísticas</h3>
+            <h3><i class="fas fa-map-marked-alt"></i> Zonas turísticas en <span id="alcaldia-current">...</span></h3>
           </div>
           <div class="card-body">
-            <ul id="zonas-list" class="styled-list"></ul>
+            <div id="zonas-container">
+              <ul id="zonas-list" class="styled-list empty">
+                <li class="empty-state">Selecciona una alcaldía para ver puntos de interés</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -56,7 +86,7 @@
 
   <footer class="main-footer">
     <div class="container">
-      <p>© 2023 Airbnb CDMX - Todos los derechos reservados</p>
+      <p>© 2023 Alojamiento CDMX - Todos los derechos reservados</p>
       <div class="social-links">
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -67,5 +97,28 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="app.js"></script>
+  <script>
+    // Pequeño script para manejar el botón de reinicio
+    document.getElementById('reset-map')?.addEventListener('click', () => {
+      const map = window.map; // Asegúrate de que el mapa sea global en app.js
+      if (map) {
+        map.setView([19.4326, -99.1332], 11);
+        document.getElementById('alcaldia-name').textContent = 'Selecciona una alcaldía en el mapa';
+        document.getElementById('alcaldia-current').textContent = '...';
+        document.getElementById('lugares-list').innerHTML = '<li class="empty-state">Selecciona una alcaldía para ver opciones</li>';
+        document.getElementById('zonas-list').innerHTML = '<li class="empty-state">Selecciona una alcaldía para ver puntos de interés</li>';
+        document.getElementById('zonas-list').classList.add('empty');
+        
+        if (window.selectedLayer) {
+          window.selectedLayer.setStyle({
+            color: '#333',
+            weight: 2,
+            fillOpacity: 0.1
+          });
+          window.selectedLayer = null;
+        }
+      }
+    });
+  </script>
 </body>
 </html>

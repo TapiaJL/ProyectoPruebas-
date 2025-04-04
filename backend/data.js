@@ -1,4 +1,4 @@
-// Datos de ejemplo para las 16 alcaldías de la CDMX
+/*// Datos de ejemplo para las 16 alcaldías de la CDMX
 const alcaldias = [
   { id: 9001, name: "Álvaro Obregón", coordinates: [19.3585, -99.2033] },
   { id: 9002, name: "Azcapotzalco", coordinates: [19.4872, -99.1854] },
@@ -151,3 +151,4 @@ const zonasTuristicas = [
 ];
 
 module.exports = { alcaldias, lugares, zonasTuristicas };
+*/

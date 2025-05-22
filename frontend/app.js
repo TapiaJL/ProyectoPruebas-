@@ -195,12 +195,12 @@ const zonasTuristicasData = {
     {
       name: "Canales de Xochimilco",
       image: "./images/canales-xochimilco.jpg",
-      description: "Red de canales prehispánicos donde navegar en coloridas trajineras"
+      description: "Red de canales prehispánicos donde navegar en coloridas trajineras."
     },
     {
       name: "Mercado de Xochimilco",
       image: "./images/Mercado_de_Xochimilco.jpg",
-      description: "Mercado tradicional con productos agrícolas y artesanías locales"
+      description: "Mercado tradicional con productos agrícolas y artesanías locales."
     }
   ]
 };

@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
-const { alcaldias, lugares, zonasTuristicas } = require('./data'); // Importa los datos desde data.js
 
 const app = express();
 const PORT = 3000;

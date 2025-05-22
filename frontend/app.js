@@ -22,192 +22,184 @@ const zonasTuristicasData = {
   "alvaro obregon": [
     { 
       name: "San Ángel", 
-      image: "https://cdn2.civitatis.com/mexico/ciudad-mexico/guia/san-angel.jpg",
+      image: "./images/san-angel.jpg", 
       description: "Barrio colonial con arquitectura virreinal y famoso mercado de artesanías los sábados"
     },
     { 
       name: "Jardines del Pedregal", 
-      image: "https://mxcity.mx/wp-content/uploads/2018/09/jardines-pedregal-cdmx.jpg",
+      image: "./images/jardines-pedregal.jpg",
       description: "Exclusiva zona residencial diseñada por Luis Barragán con impresionantes mansiones"
     }
   ],
   "azcapotzalco": [
     {
       name: "Parque Tezozómoc",
-      image: "https://parquesalegres.org/wp-content/uploads/2021/04/Parque-Tezozomoc-1.jpg",
+      image: "./images/parque-tezozomoc.jpg",
       description: "Parque con réplica a escala del Valle de México en la época prehispánica"
     },
     {
       name: "Alameda Norte",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/01/Alameda-Norte-1.jpg",
+      image: "./images/alameda-norte.jpg",
       description: "Gran área verde con fuentes danzantes y pista de patinaje"
     }
   ],
   "benito juarez": [
     {
       name: "Parque Hundido",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2022/03/parque-hundido-cdmx.jpg",
+      image: "./images/parque-hundido.jpg",
       description: "Famoso por su reloj floral y las reproducciones de piezas arqueológicas"
     },
     {
       name: "World Trade Center",
-      image: "https://www.wtcmexico.com/wp-content/uploads/2021/03/WTC-Ciudad-de-Mexico.jpg",
+      image: "./images/WTC.jpg",
       description: "Complejo con mirador panorámico a 50 pisos de altura"
     }
   ],
   "coyoacan": [
     {
       name: "Museo Frida Kahlo (Casa Azul)",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/museo-frida-kahlo-casa-azul.jpg",
+      image: "./images/museo-frida-kahlo.jpg",
       description: "Hogar de la famosa pintora, con obras personales y jardines"
     },
     {
       name: "Viveros de Coyoacán",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/viveros-de-coyoacan.jpg",
+      image: "./images/viveros.jpg",
       description: "Vivero convertido en parque con senderos arbolados ideales para correr"
     }
   ],
-  "cuajimalpa": [
+  "cuajimalpa de morelos": [
     {
       name: "Desierto de los Leones",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/desierto-de-los-leones.jpg",
+      image: "./images/desierto-leones.jpg",
       description: "Parque nacional con exconvento carmelita del siglo XVII y bosques de oyamel"
     },
     {
       name: "Centro de Cuajimalpa",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/02/Cuajimalpa-1.jpg",
+      image: "./images/centor-cuajimalpa.jpg",
       description: "Zona con arquitectura tradicional y el Templo de San Pedro Cuajimalpa"
     }
   ],
   "cuauhtemoc": [
     {
       name: "Zócalo Capitalino",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/zocalo-cdmx.jpg",
+      image: "./images/zocalo-capitalino.png",
       description: "Plaza principal flanqueada por la Catedral y el Palacio Nacional"
     },
     {
       name: "Palacio de Bellas Artes",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/palacio-de-bellas-artes.jpg",
+      image: "./images/bellas-artes.jpg",
       description: "Emblemático recinto cultural con murales de Rivera y Siqueiros"
     }
   ],
-  "gustavo a madero": [
+  "gustavo a. madero": [
     {
       name: "Basílica de Guadalupe",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/basilica-guadalupe.jpg",
+      image: "./images/basílica-de-guadalupe.jpg",
       description: "Santuario mariano más visitado de América, con la tilma de Juan Diego"
-    },
-    {
-      name: "La Villa",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/02/Gustavo-A-Madero-1.jpg",
-      description: "Complejo religioso con múltiples templos y museos"
+    
     }
   ],
   "iztacalco": [
     {
       name: "Parque Deportivo Oceanía",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/02/Iztacalco-1.jpg",
+      image: "./images/deporte-iztacalco.jpg",
       description: "Complejo deportivo con alberca olímpica y estadio de béisbol"
     },
     {
-      name: "Pista de Hielo",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/pista-de-hielo-iztacalco.jpg",
-      description: "Pista de patinaje sobre hielo abierta todo el año"
+      name: "Estadio GNP",
+      image: "./images/Estadio-GNP.jpeg",
+      description: "El Estadio GNP Seguros es un lugar popular para conciertos en Iztacalco, CDMX, que ha acogido a diversos artistas y eventos a lo largo de los años."
     }
   ],
   "iztapalapa": [
     {
       name: "Cerro de la Estrella",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/cerro-de-la-estrella.jpg",
+      image: "./images/cerro-de-la-estrella.png",
       description: "Sitio arqueológico donde se celebra la Pasión de Cristo cada Semana Santa"
     },
     {
       name: "Parque Cuitláhuac",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/02/Iztapalapa-1.jpg",
+      image: "./images/parque-cuitlahuac.jpg",
       description: "Parque ecológico con lago artificial y áreas recreativas"
     }
   ],
   "la magdalena contreras": [
     {
       name: "Los Dinamos",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/los-dinamos.jpg",
-      description: "Área natural con senderos para caminata junto al río Magdalena"
-    },
-    {
-      name: "Parque Ecológico",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/02/Magdalena-Contreras-1.jpg",
-      description: "Zona boscosa ideal para días de campo y actividades al aire libre"
+      image: "./images/los-dinamos.jpeg",
+      description: "Es un Área Natural Protegida con una extensión de 2, 429 hectáreas de bosque. Hay una red de senderos ecoturísticos de 26 kilómetros donde se pueden practicar diversas actividades como bicicleta, escalada, tirolesa, rappel, campismo, pesca de truchas o montar a caballo."
     }
+  
   ],
   "miguel hidalgo": [
     {
       name: "Bosque de Chapultepec",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/bosque-de-chapultepec.jpg",
+      image: "./images/chapultepec.jpg",
       description: "Uno de los parques urbanos más grandes de Latinoamérica con museos y zoológico"
     },
     {
       name: "Polanco",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/polanco.jpg",
+      image: "./images/polanco.jpg",
       description: "Exclusiva zona con restaurantes de lujo, boutiques y galerías de arte"
     }
   ],
   "milpa alta": [
     {
       name: "Volcán Teuhtli",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/volcan-teuhtli.jpg",
+      image: "./images/volcán-teutl.jpeg",
       description: "Volcán extinto con senderos para caminata y vistas panorámicas"
     },
     {
       name: "Mercado de Milpa Alta",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/02/Milpa-Alta-1.jpg",
+      image: "./images/mercado.jpg",
       description: "Mercado tradicional famoso por su mole y productos agrícolas locales"
     }
   ],
   "tlahuac": [
     {
       name: "Lago de los Reyes Aztecas",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/lago-reyes-aztecas.jpg",
+      image: "./images/lago-de-los-reyes.jpg",
       description: "Cuerpo de agua rodeado de naturaleza ideal para paseos en trajinera"
     },
     {
       name: "Pueblo de Tláhuac",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/02/Tlahuac-1.jpg",
+      image: "./images/pueblo-tlahuac.jpg",
       description: "Pueblo originario que conserva tradiciones y arquitectura colonial"
     }
   ],
   "tlalpan": [
     {
       name: "Casa de Tlalpan",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/casa-tlalpan.jpg",
+      image: "./images/casa-cultura.jpg",
       description: "Centro cultural en casona porfiriana con talleres y exposiciones"
     },
     {
       name: "Ajusco",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/ajusco.jpg",
+      image: "./images/ajusco.jpg",
       description: "Volcán con áreas para excursionismo y restaurantes de comida tradicional"
     }
   ],
   "venustiano carranza": [
     {
       name: "Aeropuerto Internacional (Terminal 1)",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/aeropuerto-ciudad-mexico.jpg",
+      image: "./images/Terminal-1.jpg",
       description: "Edificio icónico con murales de Juan O'Gorman y arquitectura funcionalista"
     },
     {
       name: "Alameda Oriente",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/02/Venustiano-Carranza-1.jpg",
+      image: "./images/alameda-oriente.jpeg",
       description: "Parque urbano con fuentes y áreas deportivas"
     }
   ],
   "xochimilco": [
     {
       name: "Canales de Xochimilco",
-      image: "https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/03/xochimilco-trajineras.jpg",
+      image: "./images/canales-xochimilco.jpg",
       description: "Red de canales prehispánicos donde navegar en coloridas trajineras"
     },
     {
       name: "Mercado de Xochimilco",
-      image: "https://cdn10.cdmx.gob.mx/wp-content/uploads/2021/02/Xochimilco-1.jpg",
+      image: "./images/Mercado_de_Xochimilco.jpg",
       description: "Mercado tradicional con productos agrícolas y artesanías locales"
     }
   ]

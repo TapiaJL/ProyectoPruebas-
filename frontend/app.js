@@ -206,7 +206,7 @@ const zonasTuristicasData = {
 };
 
 // Cargar el GeoJSON de las alcaldías
-fetch('http://localhost:3000/api/alcaldias-geojson')
+fetch('/api/alcaldias-geojson')
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {

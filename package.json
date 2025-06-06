@@ -25,6 +25,7 @@
     "test:interactive": "mocha tests/selenium/interactiveMap.js",
     "test:linksTest": "mocha tests/selenium/linkSample.js",
     "test:performance": "node tests/performance/performanceTest.js",
+    "test:redirects": "mocha tests/selenium/redirectsToTheLinks.js",
     "test": "npm run test:navigation && npm run test:performance"
   },
   "repository": {

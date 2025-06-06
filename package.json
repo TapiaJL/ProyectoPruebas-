@@ -23,6 +23,7 @@
     "start": "node backend/server.js",
     "test:navigation": "mocha tests/selenium/navigationTest.js",
     "test:interactive": "mocha tests/selenium/interactiveMap.js",
+    "test:linksTest": "mocha tests/selenium/linkSample.js",
     "test:performance": "node tests/performance/performanceTest.js",
     "test": "npm run test:navigation && npm run test:performance"
   },
@@ -42,3 +43,4 @@
   },
   "description": ""
 }
+ 
